@@ -1,0 +1,16 @@
+{
+  "name": "happyapp",
+  "version": "1.0.0",
+  "description": "Aplicación de frases que te inspiran",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Html",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Larry Caycho <larry.kevin.c.c@gmail.com>",
+  "license": "MIT"
+}

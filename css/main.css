@@ -4,7 +4,6 @@
 }
 body {
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 62.5%;
    height: 100vh;
    width: 100%;
    background: linear-gradient(90deg, #fffddc 0%, #cdd2ff 100%);
@@ -30,7 +29,7 @@ input[type=text]::placeholder {
 
 .main {
    margin: 0px auto;
-   width: 650px;
+   max-width: 650px;
    display: flex;
    flex-flow: column;
    text-align: center;
@@ -97,17 +96,12 @@ input[type=text]::placeholder {
    height: 100%;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
    body {
-      width: 320px;
+      font-size: 62.5%;
    }
    .main {
       padding: 0px 10px;
       width: 100%;
    }
-   .main img {
-      width: 100%;
-      height: 120px;
-      margin-bottom: 15px;
-   }
- }
+}

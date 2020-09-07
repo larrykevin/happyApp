@@ -1,7 +1,110 @@
 * {
    box-sizing: border-box;
+   margin: 0px;
 }
 body {
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 62.5%;
+   height: 100vh;
+   width: 100%;
+   background: linear-gradient(90deg, #fffddc 0%, #cdd2ff 100%);
 }
+form,
+label {
+   display: flex;
+   flex-flow: column;
+}
+form label span {
+   font-size: 1rem;
+}
+input[type=text] {
+   padding: 0px 0px 0px 15px;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1rem;
+   background: none;
+   color: #191919;
+}
+input[type=text]::placeholder {
+   color: #191919bb;
+}
+
+.main {
+   margin: 0px auto;
+   width: 650px;
+   display: flex;
+   flex-flow: column;
+   text-align: center;
+   height: 100%;
+   justify-content: center;
+}
+.main img {
+   width: 100%;
+   height: 180px;
+   margin-bottom: 15px;
+}
+.form {
+   margin-top: 50px;
+}
+.form span {
+   margin: 10px 0px;
+}
+.input {
+   border: 1px solid #ffffff;
+   border-radius: 20px;
+   height: 40px;
+   outline: none;
+   box-shadow: 10px 10px 35px 2px #580ad611;
+}
+.input__button {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1rem;
+   border: 1px solid #580ad652;
+   border-radius: 20px;
+   margin-top: 20px;
+   background: linear-gradient(180deg, #ffffff 0%, #fffff9 100%);
+   height: 40px;
+   color: #191919;
+   outline: none;
+   cursor: pointer;
+}
+.input__button:hover {
+   background: linear-gradient(180deg, #1559c0 0%, #580ad6 100%);
+   box-shadow: 5px 10px 8px 0px #ffffffb7;
+   color: #ffffff;
+}
+.imprimir__suerte {
+   font-size: 1rem;
+   font-weight: 700;
+   border-radius: 15px;
+   margin-top: 50px;
+   display: none;
+   padding: 15px 50px;
+   background-color: white;
+   box-shadow: 3px 10px 8px 0px #580ad611;
+}
+.show {
+   display: block;
+}
+.background__image {
+   background-image: url('/assets/fondo.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+   .main {
+      margin: 0px 10px;
+      width: 300px;
+   }
+   .main img {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 15px;
+   }
+ }

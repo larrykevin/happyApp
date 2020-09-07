@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HappyApp</title>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
-   <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-   <h1>HappyApp | La app que te hace feliz</h1>
-   <form action="#">
-      <label for="">
-         <span>Tu nombre:</span>
-         <input type="text" id="user">
-      </label>
-      <input type="submit" id="buttonSubmit" />
-   </form>
-   <section id="imprimirSuerte"></section>
-
-   <script src="js/index.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HappyApp</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/main.css">
+   </head>
+   <body>
+      <main class="main">
+         <img src="assets/logo.svg"">
+         <h1>La app que te hace feliz 	&#128516;</h1>
+         <form action="#" class="form">
+            <label for="">
+               <input type="text" id="user" class="input" placeholder="Escribe tu nombre aquí" required>
+            </label>
+            <input type="submit" id="buttonSubmit" class="input__button" value="&#9752;  Recibir frase inspiradora" />
+         </form>
+         <span id="imprimirSuerte" class="imprimir__suerte"></span>
+         <span class="background__image"></span>
+      </main>
+      
+      <script src="js/index.js"></script>
+      <script src="js/animate.js"></script>
+   </body>
 </html>

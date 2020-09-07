@@ -58,7 +58,7 @@ input[type=text]::placeholder {
 .input__button {
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 1rem;
-   border: 1px solid #580ad652;
+   border: 1px solid #2e08d652;
    border-radius: 20px;
    margin-top: 20px;
    background: linear-gradient(180deg, #ffffff 0%, #fffff9 100%);
@@ -98,9 +98,12 @@ input[type=text]::placeholder {
 }
 
 @media only screen and (max-width: 320px) {
+   body {
+      width: 320px;
+   }
    .main {
-      margin: 0px 10px;
-      width: 300px;
+      padding: 0px 10px;
+      width: 100%;
    }
    .main img {
       width: 100%;
